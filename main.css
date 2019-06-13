@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+main {
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ 
+ background: linear-gradient(rgb(18,64,87), rgb(43,154,208));
+ font-family: sans-serif;
+ color: white;
+}
+
+.location,
+.temperature {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+
+}
+
+.location {
+    flex-direction: row;
+}
+
+.temprerature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.temp-symbol {
+    margin: 10px;
+    font-size: 6rem;
+    font-weight: lighter;
+    
+}
+
+.degree-section h2 {
+    font-size: 10rem;
+    font-weight: lighter;
+}
+
+.temperature-description {
+    font-weight: bold;
+    font-size: 1.2rem; 
+    margin-top: 0.1%;
+    margin-bottom: auto;
+}
+
+.loadingCircle {
+    font-weight: bold;
+    font-size: 2rem; 
+}
