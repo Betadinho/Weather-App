@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
     if(navigator.geolocation) {
-        getWeather();
+        displayWeather();
     }
 });
 
-function getWeather() {
+function displayWeather() {
     const temperatureUI = document.querySelector(".degree");
     const location = document.querySelector(".location-timezone");
     const tempDescription = document.querySelector(".temperature-description");
