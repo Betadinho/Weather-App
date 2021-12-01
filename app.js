@@ -33,7 +33,7 @@ function getWeather() {
 
                 //Set Icons
                 setIcons(icon, document.querySelector(".icon"));
-                if(temperatureUI.textContent == 'O') {
+                while(temperatureUI.textContent == 'O') {
                     temperatureUI.classList.add("loadingCircle");
                 }
                 temperatureUI.addEventListener('click', () => {
