@@ -1,17 +1,16 @@
 window.addEventListener("load", () => {
-  if (navigator.geolocation) {
     setBackgroundDependingOnTime();
     displayWeather();
-  }
 });
 
 function displayWeather() {
+  const locale = navigator.geolocation;
   const temperatureUI = document.querySelector(".degree");
   const location = document.querySelector(".location-timezone");
   const tempDescription = document.querySelector(".temperature-description");
   const tempSymbol = document.querySelector(".temp-symbol");
 
-  navigator.geolocation.getCurrentPosition((position) => {
+  locale.getCurrentPosition((position) => {
     const long = position.coords.longitude;
     const lat = position.coords.latitude;
 
